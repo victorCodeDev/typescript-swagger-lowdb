@@ -1,0 +1,12 @@
+GET http://localhost:3000/clientes
+
+###
+
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "numeroDocumento": "12345"
+}
