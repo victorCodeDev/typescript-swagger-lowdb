@@ -1,12 +1,31 @@
+
 GET http://localhost:3000/clientes
 
 ###
-
 POST http://localhost:3000/cliente
 Content-Type: application/json
 
 {
-    "nombre": "Juan",
-    "apellido": "Perez",
-    "numeroDocumento": "12345"
+    "nombre": "bbb",
+    "apellido": "bbb",
+    "numeroDocumento": "111111111"
 }
+
+###
+PUT http://localhost:3000/cliente/Ksyyl9eLnzEPt-8NXSvoZ
+Content-Type: application/json
+
+{
+    "nombre": "Nombre Cliente",
+    "apellido": "Apellido Cliente",
+    "numeroDocumento": "111111111"
+}
+
+###
+GET http://localhost:3000/cliente/dLnq4LptT0zdTyUkhiDGX
+
+###
+GET http://localhost:3000/clientes/count
+
+###
+DELETE http://localhost:3000/cliente/Y4XFMbABIQZZC-DdEGH95
