@@ -36,11 +36,11 @@ const router = Router();
  * @swagger
  * /clientes:
  *  get:
- *    summary: Returns a list of tasks
+ *    summary: Retorna la lista de clientes
  *    tags: [Tasks]
  *    responses:
  *      200:
- *        description: the list of tasks
+ *        description: Lista de clientes
  *        content:
  *          application/json:
  *            schema:
@@ -50,6 +50,23 @@ const router = Router();
  */
 
 router.get('/clientes', getClientes);
+
+/**
+ * @swagger
+ * /clientes/count:
+ *   get:
+ *     summary: Retorna el total de clientes
+ *     tags: [Tasks]
+ *     responses:
+ *       200:
+ *         description: Retorna la cantidad total de clientes
+ *         content:
+ *           text/plain:
+ *             schema:
+ *               type: integer
+ *               example: 10
+ */
+
 router.get('/clientes/count', getClientesCount);
 router.get('/cliente/:id', getClienteById);
 router.post('/cliente', createCliente);
